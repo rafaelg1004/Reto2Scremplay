@@ -3,10 +3,12 @@ package co.com.dafiti.userInterface;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class CarritoUI {
-    public static final Target BTN_TALLA= Target.the("Boton Para seleccionar talla").
-            locatedBy("//div[@class='product-options productSize detailSizeProduct prelative']//div[@class='selectContainer']");
+
     public static final Target LBL_VALIDACION= Target.the("Label Nombre Producto").
-            locatedBy("(//button[@id='AddToCart'])[1]");
+            locatedBy("//a[text()='{0}'");
+
+    public static final Target BTN_IR_PAGAR= Target.the("Boton para ir a pagar ").
+            locatedBy("//div[@class='buttonsCart']//a[@class='rfloat btnAction mlm sel-cart-checkout-button']");
 
     private CarritoUI(){
         throw new UnsupportedOperationException("Utility clase");
